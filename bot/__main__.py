@@ -10,7 +10,7 @@ from bot.modules.sql import count_users
 
 keyboard = InlineKeyboardMarkup(
     [[
-        InlineKeyboardButton(text="Support Group", url=f"https://t.me/slbotzone"),
+        InlineKeyboardButton(text="Support Group", url=f"https://t.me/sl_new_bots_tm"),
     ]]
 )
 
@@ -26,7 +26,7 @@ async def startmsg(_, message):
 📊 **Statics** : /statics shorturl
 ✨ **Total Users** : `{users}`
 
-[API](https://t.me/G99Solutions/319) | [support-Chat](https://t.me/slbotzone)
+[API](https://t.me/G99Solutions/319) | [support-Chat](https://t.me/sl_new_bots_tm)
 """
     await sz.send_message(message.chat.id, START_TEXT,disable_web_page_preview=True, reply_markup=keyboard)
     add_user(message.from_user.id, message.from_user.first_name)
