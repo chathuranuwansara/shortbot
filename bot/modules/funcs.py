@@ -7,7 +7,7 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
 
 CAPTION_BTN = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("News  Channel", url="https://t.me/szteambots")]])
+            [[InlineKeyboardButton("owner  Channel🇱🇰", url="https://t.me/aboutchathura")]])
 
 def sz_checks(func):
     @wraps(func)
@@ -19,7 +19,7 @@ def sz_checks(func):
             text="""
 **🚫 Access Denied**
 
- You Must Join [My News Channel](https://t.me/szteambots)To Use Me. So, Please Join it & Try Again.
+ You Must Join [My owner Channel](https://t.me/aboutchathura)To Use Me. So, Please Join it & Try Again.
             """,
             reply_markup=CAPTION_BTN,
             disable_web_page_preview=True) 
